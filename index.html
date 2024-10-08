@@ -16,7 +16,7 @@
         </div>
         <div class="row content align-items-center">
             <div class="col col-lg-5">
-                Texto JSON
+                <h5>Texto JSON</h5>
                 <textarea rows="20" id="txtJSON" class="form-control" title="Texto JSON"></textarea>
             </div>
             <div class="col col-lg-2 align-items-center buttons">
@@ -24,8 +24,21 @@
                 <button onclick="emptyFields()" class="btn btn-secondary">Limpar</button>
             </div>
             <div class="col col-lg-5">
-                Texto CSV
+                <h5>Texto CSV</h5>
                 <textarea rows="20" id="txtCSV" class="form-control" title="Texto CSV"></textarea>
+            </div>
+        </div>
+        <div class="row" id="csv-table" style="display: none;">
+            <div class="col">
+                <h5>Tabela com os dados CSV</h5>
+                <table class="table">
+                    <thead>
+                        <tr id="csv-table-header"></tr>
+                    </thead>
+                    <tbody id="csv-table-body">
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
