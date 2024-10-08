@@ -1,0 +1,21 @@
+html, body { 
+    height: 100%;
+    background-color: #F9F9F9;
+}
+
+textarea {
+    height: 100%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.main-title {
+    height: 20%;
+    text-align: center;
+}
+
+.content {
+    height: 60%;
+}

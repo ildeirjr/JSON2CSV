@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON2CSV</title>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row main-title align-items-center">
+            <div class="col">
+                <h1>Bem-vindo ao JSON2CSV!</h1>
+            </div>
+        </div>
+        <div class="row content align-items-center">
+            <div class="col col-lg-5">
+                Texto JSON
+                <textarea rows="20" id="txtJSON" class="form-control" title="Texto JSON"></textarea>
+            </div>
+            <div class="col col-lg-2 align-items-center buttons">
+                <button onclick="convert()" class="btn btn-primary">Converter</button>
+                <button onclick="emptyFields()" class="btn btn-secondary">Limpar</button>
+            </div>
+            <div class="col col-lg-5">
+                Texto CSV
+                <textarea rows="20" id="txtCSV" class="form-control" title="Texto CSV"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="libs/jquery-3.7.1.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/converter.js"></script>
+</html>
